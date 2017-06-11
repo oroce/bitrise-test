@@ -1,0 +1,14 @@
+{
+  "name": "bitrise-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "semistandard"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "semistandard": "^11.0.0"
+  }
+}
