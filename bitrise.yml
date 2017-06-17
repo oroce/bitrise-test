@@ -31,6 +31,9 @@ workflows:
 
             # write your script here
             mkdir $HOME/.aws
+            mkdir -p $HOME/.ssh
+            echo "$EB_RSA_PRIVATE_KEY" >$HOME/.ssh/eb_rsa
+            chmod 600 >$HOME/.ssh/eb_rsa
             touch $HOME/.aws/config
             chmod 600 $HOME/.aws/config
             echo "[profile eb-cli]" > $HOME/.aws/config
