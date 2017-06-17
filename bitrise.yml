@@ -44,7 +44,8 @@ workflows:
             echo "aws_access_key_id=$aws_access_key_id" >> $HOME/.aws/config
             echo "aws_secret_access_key=$aws_secret_access_key" >> $HOME/.aws/config
             cat $HOME/.aws/config
+            pip install --upgrade pip
             sudo pip install awsebcli
 
-            eb deploy
+            eb deploy --profile eb-cli
     - deploy-to-bitrise-io@1.3.3: {}
