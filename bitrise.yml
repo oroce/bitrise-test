@@ -19,7 +19,6 @@ workflows:
     - npm@0.9.0:
         inputs:
         - command: test
-    - deploy-to-bitrise-io@1.3.3: {}
     - script@1.1.4:
         deps:
           apt_get:
@@ -48,3 +47,4 @@ workflows:
             sudo pip install awsebcli
 
             eb deploy
+    - deploy-to-bitrise-io@1.3.3: {}
